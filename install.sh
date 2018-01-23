@@ -54,7 +54,7 @@ GEN_PASS=`pwgen -1 20 -n`
 
 IP_ADD=`curl ipinfo.io/ip`
 
-echo -e "rpcuser=qbicrpc\nrpcpassword=${GEN_PASS}\nserver=1\nlisten=1\nmaxconnections=256\ndaemon=1\nrpcallowip=1\nexternalip=${IP_ADD}" > /root/.qbiccore/qbic.conf
+echo -e "rpcuser=qbicrpc\nrpcpassword=${GEN_PASS}\nserver=1\nlisten=1\nmaxconnections=256\ndaemon=1\nrpcallowip=127.0.0.1\nexternalip=${IP_ADD}" > /root/.qbiccore/qbic.conf
 
 cd /root/qbic
 
