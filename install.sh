@@ -54,7 +54,7 @@ GEN_PASS=`pwgen -1 20 -n`
 
 IP_ADD=`curl ipinfo.io/ip`
 
-printf "%b\n rpcuser=qbiccoinrpc\nrpcpassword=${GEN_PASS}\nserver=1\nlisten=1\nmaxconnections=256\ndaemon=1\nrpcallowip=127.0.0.1\naddnode=149.202.62.68\naddnode=139.99.192.205\naddnode=45.32.37.153\naddnode=199.247.16.56\naddnode=167.99.48.174\naddnode=128.199.179.226\naddnode=194.182.75.147\nexternalip=${IP_ADD}" > /root/.qbiccoin/qbiccoin.conf
+printf "%b\n rpcuser=qbiccoinrpc\nrpcpassword=${GEN_PASS}\nserver=1\nlisten=1\nmaxconnections=256\ndaemon=1\nrpcallowip=127.0.0.1\nexternalip=${IP_ADD}" > /root/.qbiccoin/qbiccoin.conf
 
 cd /root/qbiccoin
 
